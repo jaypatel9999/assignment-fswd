@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+     <style>
+        :root {
+            --primary: #2D336B;
+              --secondary: #7886C7;
+            --tertiary: #A9B5DF;
+              --background: #FFF2F2;
+        }
+    </style>
+</head>
+<body class="bg-[var(--background)]">
+    <div class="flex min-h-screen">
+        
+        <nav class="bg-[var(--primary)] text-white w-64 p-4 hidden md:block">
+               <h2 class="text-xl font-bold">Dashboard</h2>
+            <ul class="mt-4">
+                <li class="py-2 hover:bg-[var(--secondary)] p-2 rounded">Home</li>
+                    <li class="py-2 hover:bg-[var(--secondary)] p-2 rounded">Profile</li>
+                  <li class="py-2 hover:bg-[var(--secondary)] p-2 rounded">Settings</li>
+            </ul>
+        </nav>
+
+
+
+
+        <div class="md:hidden w-auto bg-[var(--primary)] text-white p-4 flex justify-between">
+            <h2 class="text-xl font-bold">Dashboard</h2>
+            <button class="text-white">☰</button>
+        </div>
+        
+        
+        <main class="flex-1 p-6">
+               <h1 class="text-3xl font-bold text-[var(--primary)]">Welcome To My Dashboard</h1>
+            <p class="mt-4 text-[var(--secondary)]">This is a responsive dashboard layout built using HTML5 and Tailwind CSS.</p>
+                     <p class="mt-2 text-[var(--tertiary)]">Resize the window to see how the navigation adapts to different screen sizes.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
+                <div class="bg-white p-4 rounded shadow-lg">
+                          <img src="image.png" alt="Placeholder" class="w-full h-auto">
+                    <p class="mt-2 text-[var(--primary)]">tigar photo</p>
+                </div>
+                <div class="bg-white p-4 rounded shadow-lg">
+                     <img src="image copy.png" alt="Placeholder" class="w-full h-auto">
+                    <p class="mt-2 text-[var(--primary)]">squiral photo</p>
+                </div>
+                <div class="bg-white p-4 rounded shadow-lg">
+                    <img src="image copy 2.png" alt="Placeholder" class="w-full h-auto">
+                              <p class="mt-2 text-[var(--primary)]">elephant photo</p>
+                </div>
+                 </div>
+           </main>
+    </div>
+</body>
+</html>
